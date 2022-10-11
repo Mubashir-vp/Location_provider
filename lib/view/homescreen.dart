@@ -15,7 +15,7 @@ class HomeScreen extends StatelessWidget {
     return SafeArea(
       child: BlocBuilder<apibloc.ApiBloc, apibloc.ApiState>(
         bloc: _apiBloc,
-        builder: (context, state) {
+        builder: (context, state,) {
           return Scaffold(
             floatingActionButton: state is apibloc.DataLoaded
                 ? BlocBuilder<hivebloc.HiveBloc, hivebloc.HiveState>(
